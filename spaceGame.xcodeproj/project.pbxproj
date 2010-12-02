@@ -21,6 +21,7 @@
 		28FD15080DC6FC5B0079059D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD15070DC6FC5B0079059D /* QuartzCore.framework */; };
 		D602A3B11225D696006F87FC /* Application.m in Sources */ = {isa = PBXBuildFile; fileRef = D602A3B01225D696006F87FC /* Application.m */; };
 		D61412D8128B7181005721E1 /* FixedCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = D61412D7128B7181005721E1 /* FixedCameraController.m */; };
+		D6244AEE12A7386400229821 /* Entity.m in Sources */ = {isa = PBXBuildFile; fileRef = D6244AED12A7386400229821 /* Entity.m */; };
 		D6664933122F2B5A001C2C34 /* GLCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = D6664932122F2B5A001C2C34 /* GLCamera.m */; };
 		D666493E122F2E04001C2C34 /* Vector3f.m in Sources */ = {isa = PBXBuildFile; fileRef = D666493D122F2E04001C2C34 /* Vector3f.m */; };
 		D66649F8122F3D97001C2C34 /* Color.m in Sources */ = {isa = PBXBuildFile; fileRef = D66649F7122F3D97001C2C34 /* Color.m */; };
@@ -70,6 +71,8 @@
 		D602A4141225ECA2006F87FC /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
 		D61412D6128B7181005721E1 /* FixedCameraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FixedCameraController.h; sourceTree = "<group>"; };
 		D61412D7128B7181005721E1 /* FixedCameraController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FixedCameraController.m; sourceTree = "<group>"; };
+		D6244AEC12A7386400229821 /* Entity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entity.h; sourceTree = "<group>"; };
+		D6244AED12A7386400229821 /* Entity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entity.m; sourceTree = "<group>"; };
 		D6664931122F2B5A001C2C34 /* GLCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLCamera.h; sourceTree = "<group>"; };
 		D6664932122F2B5A001C2C34 /* GLCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLCamera.m; sourceTree = "<group>"; };
 		D666493C122F2E04001C2C34 /* Vector3f.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector3f.h; sourceTree = "<group>"; };
@@ -227,6 +230,8 @@
 				D6E0A8B71229F56800D83B2E /* RandomFloat.m */,
 				D602A4141225ECA2006F87FC /* Timer.h */,
 				D6D8E51712345149001242CC /* Timer.m */,
+				D6244AEC12A7386400229821 /* Entity.h */,
+				D6244AED12A7386400229821 /* Entity.m */,
 			);
 			name = Simulation;
 			sourceTree = "<group>";
@@ -396,6 +401,7 @@
 				D6D8E4EC12343EF3001242CC /* NSDateTimer.m in Sources */,
 				D6D8E51912345149001242CC /* Timer.m in Sources */,
 				D61412D8128B7181005721E1 /* FixedCameraController.m in Sources */,
+				D6244AEE12A7386400229821 /* Entity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,7 +475,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = iphoneos4.1;
+				SDKROOT = iphoneos;
 			};
 			name = Debug;
 		};
@@ -483,7 +489,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
-				SDKROOT = iphoneos4.1;
+				SDKROOT = iphoneos;
 			};
 			name = Release;
 		};
