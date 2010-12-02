@@ -20,6 +20,7 @@
 		28FD15000DC6FC520079059D /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD14FF0DC6FC520079059D /* OpenGLES.framework */; };
 		28FD15080DC6FC5B0079059D /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FD15070DC6FC5B0079059D /* QuartzCore.framework */; };
 		D602A3B11225D696006F87FC /* Application.m in Sources */ = {isa = PBXBuildFile; fileRef = D602A3B01225D696006F87FC /* Application.m */; };
+		D61412D8128B7181005721E1 /* FixedCameraController.m in Sources */ = {isa = PBXBuildFile; fileRef = D61412D7128B7181005721E1 /* FixedCameraController.m */; };
 		D6664933122F2B5A001C2C34 /* GLCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = D6664932122F2B5A001C2C34 /* GLCamera.m */; };
 		D666493E122F2E04001C2C34 /* Vector3f.m in Sources */ = {isa = PBXBuildFile; fileRef = D666493D122F2E04001C2C34 /* Vector3f.m */; };
 		D66649F8122F3D97001C2C34 /* Color.m in Sources */ = {isa = PBXBuildFile; fileRef = D66649F7122F3D97001C2C34 /* Color.m */; };
@@ -67,6 +68,8 @@
 		D602A3AF1225D696006F87FC /* Application.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Application.h; sourceTree = "<group>"; };
 		D602A3B01225D696006F87FC /* Application.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Application.m; sourceTree = "<group>"; };
 		D602A4141225ECA2006F87FC /* Timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
+		D61412D6128B7181005721E1 /* FixedCameraController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FixedCameraController.h; sourceTree = "<group>"; };
+		D61412D7128B7181005721E1 /* FixedCameraController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FixedCameraController.m; sourceTree = "<group>"; };
 		D6664931122F2B5A001C2C34 /* GLCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLCamera.h; sourceTree = "<group>"; };
 		D6664932122F2B5A001C2C34 /* GLCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLCamera.m; sourceTree = "<group>"; };
 		D666493C122F2E04001C2C34 /* Vector3f.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector3f.h; sourceTree = "<group>"; };
@@ -265,6 +268,8 @@
 		D6F0CDC91214F6580009075B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D61412D6128B7181005721E1 /* FixedCameraController.h */,
+				D61412D7128B7181005721E1 /* FixedCameraController.m */,
 				D6AF6314121300BB00FFC158 /* Controller.h */,
 				D6AF6315121300BB00FFC158 /* Controller.m */,
 			);
@@ -390,6 +395,7 @@
 				D66649F8122F3D97001C2C34 /* Color.m in Sources */,
 				D6D8E4EC12343EF3001242CC /* NSDateTimer.m in Sources */,
 				D6D8E51912345149001242CC /* Timer.m in Sources */,
+				D61412D8128B7181005721E1 /* FixedCameraController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

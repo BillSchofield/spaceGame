@@ -3,6 +3,8 @@
 
 @interface VertexDrawer : NSObject {
 }
-- (void) Draw: (VertexArray *) vertexArray colorArray: (Color *) colorArray;
+- (void) drawLinesBetween: (VertexArray*) vertexArray withColors: (Color *) colorArray;
+- (void) drawLinesBetween: (VertexArray*) vertexArray withColor: (Color) color;
+
 
 @end

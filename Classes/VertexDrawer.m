@@ -7,7 +7,7 @@
 
 @implementation VertexDrawer
 
-- (void) Draw: (VertexArray*) vertexArray colorArray: (Color *) colorArray
+- (void) drawLinesBetween: (VertexArray*) vertexArray withColors: (Color *) colorArray
 {
 	glVertexPointer(3, GL_FLOAT, 0, [vertexArray getVertices]);
 	glColorPointer(4, GL_UNSIGNED_BYTE, 0, colorArray);
@@ -16,8 +16,18 @@
 	glEnableClientState(GL_COLOR_ARRAY);
 	//glEnable (GL_BLEND);
 	//glBlendFunc (GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-	glDrawArrays(GL_POINTS, 0, [vertexArray getNumberOfVertices]);
+	glDrawArrays(GL_LINE_LOOP, 0, [vertexArray getNumberOfVertices]);
 	glDisableClientState(GL_COLOR_ARRAY);
+	glDisableClientState(GL_VERTEX_ARRAY);
+	
+}
+
+- (void) drawLinesBetween: (VertexArray*) vertexArray withColor: (Color) color
+{
+	glVertexPointer(3, GL_FLOAT, 0, [vertexArray getVertices]);
+	glColor4f(color.red, color.green, color.blue, color.alpha);	
+	glEnableClientState(GL_VERTEX_ARRAY);
+	glDrawArrays(GL_LINE_LOOP, 0, [vertexArray getNumberOfVertices]);
 	glDisableClientState(GL_VERTEX_ARRAY);
 	
 }
